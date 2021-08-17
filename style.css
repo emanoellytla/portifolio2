@@ -1,0 +1,474 @@
+*{
+    margin: 0 ;
+    border: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Corbel', sans-serif;
+} 
+
+/*MENU*/
+
+nav{
+    position: fixed;
+    z-index: 1;
+    top: 0 auto;
+    background-color: black;
+    border-bottom: 2px solid rgb(27, 27, 27);
+    width: 100%;
+}
+
+.menuprincipal{
+    display:flex; 
+    margin: 0 5%; 
+    padding: 8px;
+}
+.logo{
+    padding: 10px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo a{
+    width: 20%;
+    text-decoration: none; 
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu{
+    
+    text-align: right; 
+    width: 100%; 
+}
+
+.menu a, li{
+    display: inline-block; 
+    padding:  10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none; 
+   
+}
+
+.menu a:hover{
+    color:#02f5fd;
+    cursor: pointer; 
+}
+
+.menu2 {
+    color: white;
+    text-decoration: none; 
+    display:none; 
+}
+.menu_links {
+    position: absolute;
+    left:0;
+    top: 78px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-bottom: 2px solid rgb(138, 137, 138);
+    display: none;
+    
+    
+}
+
+.menu_links li{
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    display: block;
+    text-decoration: none;
+}
+
+.icon i:hover{
+    color:#c90d9a;
+}
+
+.menu_links a{
+    color: white;
+    text-decoration: none; 
+}
+
+.menu_links a:hover{
+    color: #02f5fd;
+}
+
+.menu_links.show{
+    display: block;
+    opacity: 1;
+}
+
+.menu_links.hidder{
+    display: none;
+    opacity: 0;
+}
+
+/*Ajuste*/
+
+.topo{
+    height: 75px;
+}
+
+/*section 1*/
+
+.txt{
+    width: 50%;
+    text-align: center;
+    padding: 80px 0;   
+}
+
+.txt p{
+    padding: 0 30px;
+    color:white;
+    font-size: 50px;
+}
+
+.sociais{
+    padding: 30px; 
+}
+
+.s-img {
+    text-align: center; 
+}
+
+.s-img img{
+    width: 100%;
+
+}
+
+
+.home{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: black;
+}
+.sociais-home{
+    display: none;
+}
+.home i{
+    padding: 10px;
+    color: white;
+    font-size: 60px; 
+}
+.home i:hover{ 
+    color: #d43585;
+}
+
+
+/*ajustes*/
+
+.txt-mobile{
+    display: none;
+}
+.line{
+    background: linear-gradient( 120deg, deeppink, aqua ,deeppink, aqua)
+}
+
+
+.line2{
+    background: black;
+    height: 3px;
+}
+
+
+/*FEATURES*/
+
+.home2{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.icon{
+    width: 33.3%;
+    text-align: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+
+.icon i{
+    transition: color 3s; 
+    color:white;
+    padding: 20px 0;
+    font-size: 70px;
+}
+.icon i:hover{
+    color:#faf8fc;
+}
+
+.icon p{
+    color:black;
+    font-size: 20px;
+}
+.icon p{
+    transition: color 3s;
+}
+.icon p:hover{
+    color:#faf8fc;
+}
+/*------------------------------------------------*/
+.home3{
+    display: flex;
+    width: 100%;
+   
+}
+
+.icon2{
+    width: 33.3%;
+    text-align: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+
+.icon2 i{
+    transition: color 3s; 
+    color:black;
+    padding: 20px 0;
+    font-size: 70px;
+}
+.icon2 i:hover{
+    color:#faf8fc;
+}
+
+
+.icon2 p{
+    color:black;
+    font-size: 20px;
+}
+.icon2 p{
+    transition: color 3s;
+}
+.icon2 p:hover{
+    color:#faf8fc;
+}
+/*------------------------------------------------*/
+
+/*PORTIFÓLIO*/
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;    
+}
+
+.container img{
+    transition: transform 1s;
+}
+.container img:hover{
+   transform: scale(1.05);
+}
+
+.img-single{
+    width: 33.3%; 
+}
+
+.img-single img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+
+/*SOBRE*/
+
+.sobre{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    font-size: 45px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.sobre1 iframe{
+    margin-top: 30px;
+    display: block;
+    border-radius: 50%; 
+    margin-left: 30%;
+
+}
+#anima1::after{
+    content: '|';
+    opacity: 1;
+    margin-left: 3px;
+    animation: anima .5s infinite;
+}
+
+.sobre i{
+    padding: 10px;
+    color: white;
+    font-size: 60px; 
+}
+.sobre i:hover{ 
+    color: #d43585;
+}
+
+@keyframes anima {
+   0% , 100% {
+       opacity: 1;
+   }
+   50% {
+    opacity: 0;
+    }
+}
+.sobre2 p{
+    display: block;
+    text-align: right;
+}
+.sobre2 p{
+    padding: 0 ;
+    margin-right: 20%;
+}
+.sobre h3{
+    margin-right: 20%;
+}
+.sobre1{
+    display: inline-block;
+    padding: 10px 0;
+    width: 50%;
+}
+.sobre2{
+    color: rgb(253, 251, 251);
+    text-align: center;
+    width: 50%;
+}
+.sobre2 {
+    padding: 5% 0;;
+}
+
+
+/*RODAPÉ*/
+
+.rodape{
+    width: 100%;
+    background-color: #eeeded;
+    text-align: center;
+    padding: 20px 0;
+}
+.rodape p{
+    color: #666363;
+}
+
+
+
+@media screen and (max-width:795px){
+
+    nav{
+        padding: 0px 0;
+    }
+    .topo{
+        height: 0px;
+    }
+    .txt{
+        display:none; 
+    }
+   
+    .txt-mobile{
+        display:inline-block;
+    }
+    .txt-mobile p{
+        display: block;
+        color: white;
+        font-size: 30px;
+        padding: 60px 0;
+    }
+
+    .s-img img{
+        width: 100%;
+    }
+    .s-img p{
+        margin-top: 30px;
+        color: white;
+        font-size: 40px;
+        
+    }
+
+    .sociais2{
+        display: block;
+        padding: 60px 0;
+    }
+
+    /*section 2*/
+
+    .home2{
+       height: 190px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2{
+        text-align: right;
+        width: 100%;
+        display: inline-block; 
+        text-align: right;
+    }
+    .menu2 i{
+        padding: 12px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .icon i{
+        transition: color 3s;
+    }
+    .icon i:hover{
+        color:#c90d9a;
+    }
+    
+    .icon i{
+        color:white;
+        padding: 15px 0;
+        font-size: 55px;
+    }
+
+
+    .icon p{
+        color:black;
+        font-size: 15px;
+    }
+    .icon p{
+        transition: color 3s;
+    }
+    .icon p:hover{
+        color:#faf8fc;
+    }
+    .img-single{
+        width: 100%;
+    }
+
+    .sobre{
+        padding: 0; 
+        text-align: center;
+        
+        width: 100%;
+    }
+    .sobre1{
+        width: 100%;
+        margin: 0;
+    }
+   
+    .sobre1 iframe{
+        margin-left: 25%;
+        margin-right: 0;
+        text-align: right;
+    }
+    .sobre2{
+        width: 100%;
+        padding:40px 0;
+        margin: 0;
+    }
+   
+    .sobre2 p{
+        margin-right: 0;
+        padding: 0 10%;
+    }
+    .sobre2 h3{
+        margin-right: 0 ;
+        padding: 0 10%;
+    }
+    .topo{
+        height: 40px;
+    }
+
+}
